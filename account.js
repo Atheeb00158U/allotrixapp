@@ -56,7 +56,7 @@ export async function createPopup(){
         const popupContent = document.createElement('div');
         popupContent.innerHTML = "";
         popupContent.id = "pop-up-content";
-        popupContent.classList.add('content');
+        popupContent.classList.add('pop-up-content');
     
         // Append the elements to build the structure
         popupHeader.appendChild(heading);
@@ -79,30 +79,38 @@ export async function createPopup(){
     
         const imageDiv = document.createElement("img");
         imageDiv.src = "./assets/greenTick.png";
-        imageDiv.style.height = "150px";
-        imageDiv.style.width = "150px";
+        imageDiv.style.height = "75px";
+        imageDiv.style.width = "75px";
+        imageDiv.style.marginTop = "30px";
     
         const emailText = document.createElement("h2");
         emailText.textContent = localRememberData.email;
+        emailText.style.fontFamily = "Poppins, sans-serif";
+        emailText.style.fontWeight = "lighter";
+        emailText.style.marginTop = "-20px";
     
         const loggedinStatus = document.createElement("div");
         loggedinStatus.style.display = "flex";
-        loggedinStatus.style.gap = "3px"
+        loggedinStatus.style.gap = "6px";
+        loggedinStatus.style.marginTop = "-20px";
     
         const loggedinStatusText = document.createElement("p");
         loggedinStatusText.textContent = 'Logged in'
+        loggedinStatusText.style.fontFamily = "Poppins, sans-serif";
     
         const loggedinStatusColor = document.createElement("div");
-        loggedinStatusColor.style.backgroundColor = "green";
+        loggedinStatusColor.style.backgroundColor = "#4E9C00";
         loggedinStatusColor.style.height = "auto";
-        loggedinStatusColor.style.width = "25px";
+        loggedinStatusColor.style.width = "30px";
+        loggedinStatusColor.style.borderRadius = "3px";
     
         loggedinStatus.appendChild(loggedinStatusText);
         loggedinStatus.appendChild(loggedinStatusColor);
     
         const logOutBtn = document.createElement("button");
-        logOutBtn.className = "btn";
-        logOutBtn.textContent = "Log Out"
+        logOutBtn.classList.add('download-btn');
+        logOutBtn.textContent = "Log Out";
+        logOutBtn.style.marginTop = "-10px";
     
         popupContent.appendChild(imageDiv)
         popupContent.appendChild(emailText)
