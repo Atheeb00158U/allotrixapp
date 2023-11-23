@@ -36,13 +36,25 @@ const db = getFirestore(App);
 const usersCollection = collection(db, "users");
 const storage = getStorage(App)
 
-
-
-
-const resNav = document.getElementById('mobile-menu-button');
 const navbar = document.getElementById('navbar');
 const workingContainer = document.querySelector('#working-container');
 const mobileNav = document.getElementById("mobile-menu-button");
+const navItems = document.getElementsByClassName("nav-item");
+
+const mobileWidth = window.innerWidth < 500;
+if(mobileWidth) {
+  for (const navItem of navItems) {
+    navItem.addEventListener('click', () => {
+      if (state === 1) {
+        navbar.style.width = '100%';
+        state = 0;
+      } else {
+        navbar.style.width = '0%';
+        state = 1;
+      }
+    })
+  }
+}
 
 // Nav items
 const home = document.getElementById("homepage");
