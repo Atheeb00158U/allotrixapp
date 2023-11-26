@@ -150,8 +150,8 @@ testimonial.addEventListener("click", () => {
 
 download.addEventListener("click", () => {
   console.log("download clicked");
-  workingContainer.innerHTML = "";
-  downloadPage();
+  //workingContainer.innerHTML = "";
+  //downloadPage();
 });
 
 let state = 1;
