@@ -183,8 +183,12 @@ export function downloadPage(){
         popupHeader.appendChild(heading);
         popupHeader.appendChild(closeButton);
         popup.appendChild(popupHeader);
+<<<<<<< HEAD
         mainContent.appendChild(popupContent);
         popup.appendChild(mainContent);
+=======
+        popup.appendChild(popupContent);
+>>>>>>> 392eaa824c4e8d26371e359a28b205200ae8a4ac
         loggedInContainer.appendChild(accountName);
         loggedInContainer.appendChild(loginBtn);
         popupContent.appendChild(loggedInContainer);
@@ -312,8 +316,12 @@ export function downloadPage(){
         popupHeader.appendChild(heading);
         popupHeader.appendChild(closeButton);
         popup.appendChild(popupHeader);
+<<<<<<< HEAD
         mainContent.appendChild(popupContent);
         popup.appendChild(mainContent);
+=======
+        popup.appendChild(popupContent);
+>>>>>>> 392eaa824c4e8d26371e359a28b205200ae8a4ac
         loggedInContainer.appendChild(accountName);
         loggedInContainer.appendChild(loginBtn);
         popupContent.appendChild(loggedInContainer);
