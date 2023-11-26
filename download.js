@@ -106,6 +106,10 @@ export function downloadPage(){
         closeButton.id = 'close-popup';
         closeButton.classList.add('btn');
         closeButton.textContent = 'X';
+
+        // Main content section
+        const mainContent = document.createElement('div');
+        mainContent.classList.add('row', 'main-content', 'bg-success', 'text-center');
       
         // Popup content section
         const popupContent = document.createElement('div');
@@ -179,7 +183,8 @@ export function downloadPage(){
         popupHeader.appendChild(heading);
         popupHeader.appendChild(closeButton);
         popup.appendChild(popupHeader);
-        popup.appendChild(popupContent);
+        mainContent.appendChild(popupContent);
+        popup.appendChild(mainContent);
         loggedInContainer.appendChild(accountName);
         loggedInContainer.appendChild(loginBtn);
         popupContent.appendChild(loggedInContainer);
@@ -230,6 +235,10 @@ export function downloadPage(){
         closeButton.id = 'close-popup';
         closeButton.classList.add('btn');
         closeButton.textContent = 'X';
+
+        // Main content section
+        const mainContent = document.createElement('div');
+        mainContent.classList.add('row', 'main-content', 'bg-success', 'text-center');
       
         // Popup content section
         const popupContent = document.createElement('div');
@@ -303,7 +312,8 @@ export function downloadPage(){
         popupHeader.appendChild(heading);
         popupHeader.appendChild(closeButton);
         popup.appendChild(popupHeader);
-        popup.appendChild(popupContent);
+        mainContent.appendChild(popupContent);
+        popup.appendChild(mainContent);
         loggedInContainer.appendChild(accountName);
         loggedInContainer.appendChild(loginBtn);
         popupContent.appendChild(loggedInContainer);

@@ -919,7 +919,6 @@ height:50px;
   background-color: #242529;
   padding: 10px 20px;
   border-bottom: 1px solid grey;
-
 }
 
 .pop-up-content{
@@ -942,6 +941,11 @@ height:50px;
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
   margin-top: 100px;
+}
+
+.loggedInPopupEmailText {
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 .logged-in-container .account-name {
@@ -987,13 +991,14 @@ height:50px;
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
   margin-top: 20px;
+  margin-bottom: 40px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: transform 0.3s;
 }
 
 .download-btn:hover {
-  padding: 8px 40px;
+  transform: scale(1.05);
 }
 
 .popup-header h1 {
@@ -1308,11 +1313,33 @@ height:50px;
       }
 
       .logged-in-container {
-        width: 370px;
+        width: 300px;
+        font-size: 13px;
+      }
+
+      .logged-in-container .account-name {
+        width: 230px;
+        padding: 6px;
+      }
+      
+      .logged-in-container .login-btn {
+        width: 70px;
       }
 
       .download-dropdown {
-        width: 370px;
+        width: 300px;
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .download-btn {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .loggedInPopupEmailText {
+        font-size: 17px;
+        font-weight: bold;
       }
   
   }

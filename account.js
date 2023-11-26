@@ -86,8 +86,8 @@ export async function createPopup(){
         const emailText = document.createElement("h2");
         emailText.textContent = localRememberData.email;
         emailText.style.fontFamily = "Poppins, sans-serif";
-        emailText.style.fontWeight = "lighter";
         emailText.style.marginTop = "-20px";
+        emailText.classList.add('loggedInPopupEmailText');
     
         const loggedinStatus = document.createElement("div");
         loggedinStatus.style.display = "flex";

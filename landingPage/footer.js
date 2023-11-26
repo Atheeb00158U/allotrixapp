@@ -6,9 +6,10 @@ export function footer(){
 
 
     const footer = document.createElement('section');
+    footer.classList.add('contact');
     
     const html = `
-    <h2 style="font-size: 2em;">Contact <span style="color: #EF4036;">Us</span></h2>
+    <h2>Contact <span style="color: #EF4036;">Us</span></h2>
       <form action="/" method="post">
         <div class="name-email">
           <input type="text" name="name" placeholder="Name">
