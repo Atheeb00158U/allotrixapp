@@ -36,7 +36,7 @@ export function pricing(){
     <!-- Item 2 -->
     <article class="subs-item" style="background-color: #AA362F;">
       <h3 class="sub-head">Premium</h3>
-      <h2>Rs. 2999</h2>
+      <h2>Rs. 7000</h2>
       <p style="font-size: 13px; font-family: 'Poppins', sans-serif; font-weight: 200; margin-top: -8px;">( for <strong>1</strong> MUN )</p>
       <div class="sub-data">
         <article>
@@ -61,7 +61,7 @@ export function pricing(){
     <!-- Item 3 -->
     <article class="subs-item" style="background-color: #AA362F;">
       <h3 class="sub-head">Premium +</h3>
-      <h2>Rs. 3999</h2>
+      <h2>Rs. 10000</h2>
       <p style="font-size: 13px; font-family: 'Poppins', sans-serif; font-weight: 200; margin-top: -8px;">( for <strong>2</strong> MUN )</p>
       <div class="sub-data">
         <article>

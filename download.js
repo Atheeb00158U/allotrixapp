@@ -1,6 +1,6 @@
 const workingContainer = document.querySelector('#working-container');
 
-import { getCookie } from "./index.js";
+import { getCookie, showLoadingScreen } from "./index.js";
 import { createPopup } from "./account.js";
 
 export function downloadPage(){
@@ -66,7 +66,7 @@ export function downloadPage(){
 
     const contactMessage = document.createElement("div");
     contactMessage.className = "download-page-contact-message"
-    contactMessage.innerHTML = "<p>Still having trouble downloading?? <a href='mailto:allotrixapp@gmail.com'> Contact us </a></p>"
+    contactMessage.innerHTML = "<p style='text-align: center; margin: 20px; font-family: Poppins, sans-serif'>Still having trouble downloading?? <a href='mailto:allotrixapp@gmail.com?subject=Issues%20in%20Downloading%20Software'> Contact us </a></p>"
 
     
     workingContainer.appendChild(downloadContainer)
@@ -129,7 +129,10 @@ export function downloadPage(){
         loginBtn.textContent = localRememberData ? "Logged in" : "Login";
         loginBtn.disabled = localRememberData ? true : false;
         loginBtn.style.backgroundColor = localRememberData ? "#4E9C00" : "#EF4036";
-        loginBtn.onclick = createPopup;
+        loginBtn.addEventListener('click', () => {
+            popupContainer.classList.add('hidden');
+            createPopup();
+        });
         loginBtn.classList.add('login-btn');
 
         // Dropdown list to select a software pricing plan
@@ -143,36 +146,44 @@ export function downloadPage(){
             dropDown.appendChild(downloadOption);
         });
 
-        const downloadSoftware = () => {
-            // Define download btn function 🤡
-        }
-
-        const contactSales = () => {
-            // Define contact sales btn function 🤡
-        }
-
         // Download Button for {Standard (Free)}
         const downloadBtn = document.createElement('button');
         downloadBtn.classList.add('download-btn');
         downloadBtn.textContent = 'Download';
         downloadBtn.disabled = localRememberData ? false : true;
-        // downloadBtn.onclick = downloadSoftware; 🤡
+        downloadBtn.addEventListener('click', () => {
+            const download = document.createElement('a');
+            download.href = "./assets/Allotrix Setup 1.0.0.exe";
+            download.download = "Allotrix Setup 1.0.0.exe";
+            document.body.appendChild(download);
+            download.click();
+            document.body.removeChild(download);
+            showLoadingScreen();
+
+            const downloading = document.createElement('div');
+            downloading.innerText = "Your application is being downloaded . . .";
+            downloading.classList.add('downloading');
+            downloadBtn.remove();
+            popupContent.append(downloading);
+            dropDown.disabled = true;
+        }); 
 
         // Contact Sales Button for {Premium and Premium +}
-        const contactSalesBtn = document.createElement('button');
+        const contactSalesBtn = document.createElement('a');
         contactSalesBtn.classList.add('download-btn');
         contactSalesBtn.textContent = 'Contact Sales';
         contactSalesBtn.disabled = localRememberData ? false : true;
         contactSalesBtn.style.display = "none";
-        // contactSales.onclick = contactSales; 🤡
 
         dropDown.addEventListener('change', function () {
             if (dropDown.value === "Premium") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium Purchase")}`;
             } else if (dropDown.value === "Premium +") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium + Purchase")}`;
             } else {
                 downloadBtn.style.display = "block";
                 contactSalesBtn.style.display = "none";
@@ -180,18 +191,12 @@ export function downloadPage(){
         });
 
         // Appending all elements to their respective parent containers
-        popupHeader.appendChild(heading);
-        popupHeader.appendChild(closeButton);
+        popupHeader.append(heading, closeButton);
         popup.appendChild(popupHeader);
+        loggedInContainer.append(accountName, loginBtn);
+        popupContent.append(loggedInContainer, dropDown, downloadBtn, contactSalesBtn);
         mainContent.appendChild(popupContent);
         popup.appendChild(mainContent);
-        popup.appendChild(popupContent);
-        loggedInContainer.appendChild(accountName);
-        loggedInContainer.appendChild(loginBtn);
-        popupContent.appendChild(loggedInContainer);
-        popupContent.appendChild(dropDown);
-        popupContent.appendChild(downloadBtn);
-        popupContent.appendChild(contactSalesBtn);
         popupContainer.appendChild(popup);
       
         // Appending the parent container to document
@@ -204,6 +209,7 @@ export function downloadPage(){
         closeButton.addEventListener('click', () => {
             popupContainer.classList.add('hidden');
         });
+        
       
     });
 
@@ -259,7 +265,10 @@ export function downloadPage(){
         loginBtn.textContent = localRememberData ? "Logged in" : "Login";
         loginBtn.disabled = localRememberData ? true : false;
         loginBtn.style.backgroundColor = localRememberData ? "#4E9C00" : "#EF4036";
-        loginBtn.onclick = createPopup;
+        loginBtn.addEventListener('click', () => {
+            popupContainer.classList.add('hidden');
+            createPopup();
+        });
         loginBtn.classList.add('login-btn');
 
         // Dropdown list to select a software pricing plan
@@ -273,36 +282,44 @@ export function downloadPage(){
             dropDown.appendChild(downloadOption);
         });
 
-        const downloadSoftware = () => {
-            // Define download btn function 🤡
-        }
-
-        const contactSales = () => {
-            // Define contact sales btn function 🤡
-        }
-
         // Download Button for {Standard (Free)}
         const downloadBtn = document.createElement('button');
         downloadBtn.classList.add('download-btn');
         downloadBtn.textContent = 'Download';
         downloadBtn.disabled = localRememberData ? false : true;
-        // downloadBtn.onclick = downloadSoftware; 🤡
+        downloadBtn.addEventListener('click', () => {
+            const download = document.createElement('a');
+            download.href = "./assets/Allotrix-1.0.0-arm64.dmg";
+            download.download = "Allotrix-1.0.0-arm64.dmg";
+            document.body.appendChild(download);
+            download.click();
+            document.body.removeChild(download);
+            showLoadingScreen();
+
+            const downloading = document.createElement('div');
+            downloading.innerText = "Your application is being downloaded . . .";
+            downloading.classList.add('downloading');
+            downloadBtn.remove();
+            popupContent.append(downloading);
+            dropDown.disabled = true;
+        }); 
 
         // Contact Sales Button for {Premium and Premium +}
-        const contactSalesBtn = document.createElement('button');
+        const contactSalesBtn = document.createElement('a');
         contactSalesBtn.classList.add('download-btn');
         contactSalesBtn.textContent = 'Contact Sales';
         contactSalesBtn.disabled = localRememberData ? false : true;
         contactSalesBtn.style.display = "none";
-        // contactSales.onclick = contactSales; 🤡
 
         dropDown.addEventListener('change', function () {
             if (dropDown.value === "Premium") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium Purchase")}`;
             } else if (dropDown.value === "Premium +") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium + Purchase")}`;
             } else {
                 downloadBtn.style.display = "block";
                 contactSalesBtn.style.display = "none";
@@ -310,18 +327,12 @@ export function downloadPage(){
         });
 
         // Appending all elements to their respective parent containers
-        popupHeader.appendChild(heading);
-        popupHeader.appendChild(closeButton);
+        popupHeader.append(heading, closeButton);
         popup.appendChild(popupHeader);
+        loggedInContainer.append(accountName, loginBtn);
+        popupContent.append(loggedInContainer, dropDown, downloadBtn, contactSalesBtn);
         mainContent.appendChild(popupContent);
         popup.appendChild(mainContent);
-        popup.appendChild(popupContent);
-        loggedInContainer.appendChild(accountName);
-        loggedInContainer.appendChild(loginBtn);
-        popupContent.appendChild(loggedInContainer);
-        popupContent.appendChild(dropDown);
-        popupContent.appendChild(downloadBtn);
-        popupContent.appendChild(contactSalesBtn);
         popupContainer.appendChild(popup);
       
         // Appending the parent container to document

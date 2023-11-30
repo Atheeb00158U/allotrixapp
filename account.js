@@ -39,7 +39,8 @@ export async function createPopup(){
         const popup = document.createElement('div');
         popup.classList.add('popup');
         popup.style.height = "50%";
-        popup.style.width = "50%";
+        popup.style.width = "80%";
+        popup.style.overflowY = 'hidden';
 
     
         const popupHeader = document.createElement('div');
@@ -89,7 +90,6 @@ export async function createPopup(){
         emailText.style.marginTop = "-20px";
         emailText.classList.add('loggedInPopupEmailText');
         emailText.style.fontWeight = "lighter";
-        emailText.style.marginTop = "-20px";
 
         const loggedinStatus = document.createElement("div");
         loggedinStatus.style.display = "flex";

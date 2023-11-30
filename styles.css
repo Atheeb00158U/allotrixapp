@@ -404,16 +404,11 @@
     gap: 10px;
   }
   
-  .sub-data img {
-    height: 25px;
-    width: 25px;
-  }
-  
   .sub-data p {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
-    margin: 10px 0;
+    margin: 7px 0;
   }
   
 
@@ -797,7 +792,7 @@
 
 .wrappe .contin .soci img{
     padding: 8px;
-height:50px;
+    height:50px;
     background-color: rbga(255,255,255,0.08);
     border-radius: 4px;
     box-shadow: 0 4px 4px rbga(0,0,0,0.5);
@@ -943,14 +938,11 @@ height:50px;
   margin-top: 100px;
 }
 
-<<<<<<< HEAD
 .loggedInPopupEmailText {
   font-size: 24px;
   font-weight: lighter;
 }
 
-=======
->>>>>>> 392eaa824c4e8d26371e359a28b205200ae8a4ac
 .logged-in-container .account-name {
   width: 325px;
   text-align: center;
@@ -970,6 +962,10 @@ height:50px;
   text-transform: uppercase;
 }
 
+.logged-in-container .login-btn:disabled {
+  cursor: not-allowed;
+}
+
 .download-dropdown {
   width: 450px;
   max-width: 92vw;
@@ -983,6 +979,10 @@ height:50px;
   text-align: center;
 }
 
+.download-dropdown:disabled {
+  cursor: not-allowed;
+}
+
 .download-btn {
   padding: 5px 30px;
   border: none;
@@ -994,7 +994,6 @@ height:50px;
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
   margin-top: 20px;
-<<<<<<< HEAD
   margin-bottom: 40px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   cursor: pointer;
@@ -1003,15 +1002,24 @@ height:50px;
 
 .download-btn:hover {
   transform: scale(1.05);
-=======
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
 }
 
-.download-btn:hover {
-  padding: 8px 40px;
->>>>>>> 392eaa824c4e8d26371e359a28b205200ae8a4ac
+.download-btn:disabled {
+  cursor: not-allowed;
+  background-color: #af5853;
+}
+
+.download-btn:disabled:hover {
+  transform: none;
+}
+
+.downloading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  margin: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 .popup-header h1 {
@@ -1049,7 +1057,7 @@ height:50px;
   background-image: url("https://tr.rbxcdn.com/38c6edcb50633730ff4cf39ac8859840/420/420/Hat/Png");
   background-size: cover;
   background-repeat: no-repeat;
-
+  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .main-content{
@@ -1326,7 +1334,6 @@ height:50px;
       }
 
       .logged-in-container {
-<<<<<<< HEAD
         width: 300px;
         font-size: 13px;
       }
@@ -1352,15 +1359,10 @@ height:50px;
       }
 
       .loggedInPopupEmailText {
-        font-size: 17px;
+        font-size: 18px;
         font-weight: bold;
-=======
-        width: 370px;
-      }
-
-      .download-dropdown {
-        width: 370px;
->>>>>>> 392eaa824c4e8d26371e359a28b205200ae8a4ac
+        width: 300px;
+        text-align: center;
       }
   
   }
