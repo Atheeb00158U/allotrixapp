@@ -153,8 +153,8 @@ export function downloadPage(){
         downloadBtn.disabled = localRememberData ? false : true;
         downloadBtn.addEventListener('click', () => {
             const download = document.createElement('a');
-            download.href = "./assets/Allotrix Setup 1.0.0.exe";
-            download.download = "Allotrix Setup 1.0.0.exe";
+            download.href = "./assets/Allotrix Setup 1.0.0.zip";
+            download.download = "Allotrix Setup 1.0.0.zip";
             document.body.appendChild(download);
             download.click();
             document.body.removeChild(download);
@@ -289,8 +289,8 @@ export function downloadPage(){
         downloadBtn.disabled = localRememberData ? false : true;
         downloadBtn.addEventListener('click', () => {
             const download = document.createElement('a');
-            download.href = "./assets/Allotrix-1.0.0-arm64.dmg";
-            download.download = "Allotrix-1.0.0-arm64.dmg";
+            download.href = "./assets/Allotrix-1.0.0-arm64.zip";
+            download.download = "Allotrix-1.0.0-arm64.zip";
             document.body.appendChild(download);
             download.click();
             document.body.removeChild(download);
