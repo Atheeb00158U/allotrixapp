@@ -205,10 +205,10 @@ export async function createPopup(){
 
             const mainContent = document.createElement('div');
             mainContent.id = "main-content";
-            mainContent.classList.add('row', 'main-content', 'bg-success', 'text-center');
+            mainContent.classList.add('main-content');
 
             const loginForm = document.createElement('div');
-            loginForm.classList.add('col-md-8', 'col-xs-12', 'col-sm-12', 'login_form');
+            loginForm.classList.add('login_form');
 
             const formContainer = document.createElement('div');
             formContainer.classList.add('container-fluid');

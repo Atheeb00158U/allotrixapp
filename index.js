@@ -6,6 +6,7 @@ import {lifeTimeOffer} from "./landingPage/lifeTimeOffer.js";
 import {footer} from "./landingPage/footer.js";
 import {showLoadingScreen, hideLoadingScreen, createLoadingScreen} from "./loadingPage.js";
 import {testimonials} from "./testimonials.js";
+import { faqsPage } from "./faqs.js";
 import {downloadPage} from "./download.js";
 import {createPopup, clearCookie} from "./account.js";
 import{firebaseConfig} from "./firebaseConfig.js"
@@ -25,10 +26,10 @@ export{
     lifeTimeOffer,
     footer,
     testimonials,
+    faqsPage,
     downloadPage,
     firebaseConfig,
     getCookie,
     clearCookie,
-    partners,
-    
+    partners,  
 }

@@ -802,6 +802,13 @@
     background-color: #3b7cf5;
 }
 
+/* FAQS */
+.faqs-container {
+  margin: 0 200px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #242529;
+  margin-bottom: 100px;
+}
 
 
 /*DOWNLOAD PAGE*/
@@ -1057,7 +1064,6 @@
   background-image: url("https://tr.rbxcdn.com/38c6edcb50633730ff4cf39ac8859840/420/420/Hat/Png");
   background-size: cover;
   background-repeat: no-repeat;
-  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .main-content{
@@ -1173,6 +1179,10 @@
     .life-access-container h3 {
       font-size: 16px;
       width: 62%;
+    }
+
+    .faqs-container {
+      margin: 0 50px;
     }
   }
   
@@ -1363,6 +1373,10 @@
         font-weight: bold;
         width: 300px;
         text-align: center;
+      }
+      
+      .faqs-container {
+        margin: 0 20px;
       }
   
   }

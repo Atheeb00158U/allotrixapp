@@ -8,6 +8,7 @@ import {
   footer,
   downloadPage,
   partners,
+  faqsPage,
   createPopup,
 } from "./index.js";
 
@@ -76,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const localRememberData = JSON.parse(rememberMeCookie);
   
   
-    console.log("Email:", localRememberData.email);
-    console.log("Password:", localRememberData.password);
+    // console.log("Email:", localRememberData.email);
+    // console.log("Password:", localRememberData.password);
 
     loginOnLoad();
 
@@ -139,9 +140,15 @@ home.addEventListener("click", () => {
 
 testimonial.addEventListener("click", () => {
   console.log("Testimonial clicked");
-  //workingContainer.innerHTML = "";
-  //testimonials();
+  // workingContainer.innerHTML = "";
+  // testimonials();
 });
+
+faqs.addEventListener("click", () => {
+  console.log("Faqs clicked");
+  workingContainer.innerHTML = "";
+  faqsPage();
+})
 
 
 
