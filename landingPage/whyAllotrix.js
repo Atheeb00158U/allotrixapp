@@ -68,25 +68,25 @@ export function whyChooseContainer(){
         whyChooseContainer.appendChild(backgroundText);
       
         whyChooseContainer.appendChild(createWhyChooseItem(
-          'https://i.postimg.cc/qMd28KZL/im4.png',
+          'https://i.postimg.cc/05WMPgsW/im1.png',
           'Eliminate Errors',
           'Efficiently and rapidly allocate precise and high-quality assignments in a matter of seconds.'
         ));
       
         whyChooseContainer.appendChild(createWhyChooseItem(
-          'https://i.postimg.cc/J7XbDxK0/im3.png',
+          'https://i.postimg.cc/SRvJr9dF/im2.png',
           'Save Money & Time',
           'Streamline your registration, processing, and allotment, saving time and enhancing delegate satisfaction.'
         ));
       
         whyChooseContainer.appendChild(createWhyChooseItem(
-          'https://i.postimg.cc/mk7MvZhC/im2.png',
+          'https://i.postimg.cc/J4syhT71/im3.png',
           'Best Delegate Experience',
           'Allotrix allows delegates to select their desired countries for a more engaging debate experience.'
         ));
       
         whyChooseContainer.appendChild(createWhyChooseItem(
-          'https://i.postimg.cc/V6xnZ0sz/im1.png',
+          'https://i.postimg.cc/ncNX9vMq/im4.png',
           'Get Insights',
           'Allotrix provides detailed insights into your tournament data, so you can make informed decisions about future events.'
         ));

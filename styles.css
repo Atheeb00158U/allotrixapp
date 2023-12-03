@@ -371,7 +371,7 @@
   
   .subs-item {
     width: 275px;
-    height: 400px;
+    height: 440px;
     border: 2px solid #AA362F;
     border-radius: 20px;
     display: flex;
@@ -395,13 +395,13 @@
   }
   
   .sub-data {
-    margin-top: 30px;
+    margin-top: 2px;
   }
   
   .sub-data article {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
   }
   
   .sub-data p {
@@ -409,6 +409,7 @@
     font-weight: 200;
     letter-spacing: 1px;
     margin: 7px 0;
+    font-size: 14px;
   }
   
 
@@ -808,6 +809,10 @@
   font-family: 'Poppins', sans-serif;
   background-color: #242529;
   margin-bottom: 100px;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 
