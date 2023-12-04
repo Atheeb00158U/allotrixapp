@@ -2,6 +2,7 @@ import {
   createHeroSection,
   whyChooseContainer,
   features,
+  updatesPage,
   testimonials,
   pricing,
   lifeTimeOffer,
@@ -136,6 +137,12 @@ home.addEventListener("click", () => {
   console.log("Home clicked");
   workingContainer.innerHTML = "";
   loadLandingPage();
+});
+
+updates.addEventListener("click", () => {
+  console.log("Updates clicked");
+  workingContainer.innerHTML = "";
+  updatesPage();
 });
 
 testimonial.addEventListener("click", () => {

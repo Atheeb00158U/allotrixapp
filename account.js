@@ -102,7 +102,7 @@ export async function createPopup(){
     
         const loggedinStatusColor = document.createElement("div");
         loggedinStatusColor.style.backgroundColor = "#4E9C00";
-        loggedinStatusColor.style.height = "auto";
+        loggedinStatusColor.style.height = "25px";
         loggedinStatusColor.style.width = "30px";
         loggedinStatusColor.style.borderRadius = "3px";
     
@@ -112,7 +112,7 @@ export async function createPopup(){
         const logOutBtn = document.createElement("button");
         logOutBtn.classList.add('download-btn');
         logOutBtn.textContent = "Log Out";
-        logOutBtn.style.marginTop = "-10px";
+        logOutBtn.style.marginTop = "-30px";
     
         popupContent.appendChild(imageDiv)
         popupContent.appendChild(emailText)

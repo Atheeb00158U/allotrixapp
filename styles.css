@@ -690,6 +690,41 @@
       height: 100%;
     }
   }
+
+  /* UPDATES */
+
+  .updates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 100px;
+  }
+
+  .updates-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 5px;
+    width: 75%;
+    height: auto;
+    background-color: #242529;
+  }
+
+  .updates-item h2 {
+    font-size: 30px;
+  }
+
+  .updates-item h3 {
+    font-size: 25px;
+  }
+
+  .updates-item p {
+    font-size: 18px;
+    font-weight: lighter;
+  }
  
   /*TESTIMONIAL*/
 
@@ -1382,6 +1417,10 @@
       
       .faqs-container {
         margin: 0 20px;
+      }
+
+      .updates-heading {
+        font-size: 30px;
       }
   
   }

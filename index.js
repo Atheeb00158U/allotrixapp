@@ -5,6 +5,7 @@ import {pricing} from "./landingPage/pricing.js";
 import {lifeTimeOffer} from "./landingPage/lifeTimeOffer.js";
 import {footer} from "./landingPage/footer.js";
 import {showLoadingScreen, hideLoadingScreen, createLoadingScreen} from "./loadingPage.js";
+import {updatesPage} from "./updates.js";
 import {testimonials} from "./testimonials.js";
 import { faqsPage } from "./faqs.js";
 import {downloadPage} from "./download.js";
@@ -25,6 +26,7 @@ export{
     pricing,
     lifeTimeOffer,
     footer,
+    updatesPage,
     testimonials,
     faqsPage,
     downloadPage,

@@ -72,7 +72,6 @@ export const faqsPage = () => {
     workingContainer.appendChild(faqsHeading);
 
     const faqsContainer = document.createElement("section");
-    faqsContainer.style.color = "black";
     faqsContainer.style.width = "100%";
 
     const accordionContainer = document.createElement('div');
