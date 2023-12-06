@@ -210,6 +210,6 @@ export function downloadPage(){
     }
 
 
-    windowsDownloadButton.addEventListener("click", () => downloadFunction("./assets/Allotrix Setup 1.0.0.zip", "Allotrix Setup 1.0.0.zip"));
-    macDownloadButton.addEventListener("click", () => downloadFunction("./assets/Allotrix-1.0.0-arm64.zip", "Allotrix-1.0.0-arm64.zip"));
+    windowsDownloadButton.addEventListener("click", () => downloadFunction("https://drive.google.com/uc?export=download&id=17YxNy8z6JaOsgeogv-pYY7l_OzqV-BW3", "Allotrix Setup 1.0.0.exe"));
+    macDownloadButton.addEventListener("click", () => downloadFunction("https://drive.google.com/uc?export=download&id=1TZ9pdcWXL6uDuA1G6BB71XwJT9xqS9ij", "Allotrix-1.0.0-arm64.dmg"));
 }
