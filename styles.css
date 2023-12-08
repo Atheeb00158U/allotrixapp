@@ -950,7 +950,19 @@
   background-color: #242529;
   box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
+}
 
+.popup-logged-in {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background-color: #242529;
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.3);
+  overflow-y: hidden;
 }
 
 .popup-header {
@@ -1191,6 +1203,11 @@
       animation: itemFade 0.5s ease-in-out forwards;
       justify-content: center;
     }
+
+    .popup-logged-in {
+      height: 30%;
+      width: 60%;
+    }
   
     .navbar {
       padding: 0 20px;
@@ -1421,6 +1438,11 @@
 
       .updates-heading {
         font-size: 30px;
+      }
+
+      .popup-logged-in {
+        width: 80%;
+        height: 40%;
       }
   
   }

@@ -37,10 +37,8 @@ export async function createPopup(){
         popupContainer.classList.add('hidden');
     
         const popup = document.createElement('div');
-        popup.classList.add('popup');
-        popup.style.height = "50%";
-        popup.style.width = "80%";
-        popup.style.overflowY = 'hidden';
+        popup.classList.add('popup-logged-in');
+
 
     
         const popupHeader = document.createElement('div');
