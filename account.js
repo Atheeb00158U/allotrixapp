@@ -466,6 +466,7 @@ export async function createPopup(){
                         password,
                         loggedIn: false,
                         subscriptionPurchased: false,
+                        trial: true,
                         html: "",
                         version: 1
                     };
