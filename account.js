@@ -376,7 +376,7 @@ export async function createPopup(){
 
             const mainContent = document.createElement('div');
             mainContent.id = "main-content"
-            mainContent.classList.add('row', 'main-content', 'bg-success', 'text-center');
+            mainContent.classList.add('main-content');
             
         
             
