@@ -136,7 +136,7 @@ export function downloadPage(){
         // Dropdown list to select a software pricing plan
         const dropDown = document.createElement('select');
         dropDown.classList.add('download-dropdown');
-        const downloadOptions = ["Standard (Free)", "Premium", "Premium +"];
+        const downloadOptions = ["Basic (Free)", "Automation Standard", "Automation Premium", "Automation Enterprise"];
         downloadOptions.forEach((option) => {
             const downloadOption = document.createElement('option');
             downloadOption.textContent = option;
@@ -144,7 +144,7 @@ export function downloadPage(){
             dropDown.appendChild(downloadOption);
         });
 
-        // Download Button for {Standard (Free)}
+        // Download Button for {Basic (Free)}
         const downloadBtn = document.createElement('button');
         downloadBtn.classList.add('download-btn');
         downloadBtn.textContent = 'Download';
@@ -166,7 +166,7 @@ export function downloadPage(){
             dropDown.disabled = true;
         }); 
 
-        // Contact Sales Button for {Premium and Premium +}
+        // Contact Sales Button for {Automation Standard, Automation Premium and Automation Enterprise}
         const contactSalesBtn = document.createElement('a');
         contactSalesBtn.classList.add('download-btn');
         contactSalesBtn.textContent = 'Contact Sales';
@@ -174,14 +174,18 @@ export function downloadPage(){
         contactSalesBtn.style.display = "none";
 
         dropDown.addEventListener('change', function () {
-            if (dropDown.value === "Premium") {
+            if (dropDown.value === "Automation Standard") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
-                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium Purchase")}`;
-            } else if (dropDown.value === "Premium +") {
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Automation Standard Purchase")}`;
+            } else if (dropDown.value === "Automation Premium") {
                 downloadBtn.style.display = "none";
                 contactSalesBtn.style.display = "block";
-                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Premium + Purchase")}`;
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Automation Premium Purchase")}`;
+            } else if (dropDown.value === "Automation Enterprise") {
+                downloadBtn.style.display = "none";
+                contactSalesBtn.style.display = "block";
+                contactSalesBtn.href = `mailto:allotrixapp@gmail.com?subject=${encodeURIComponent("Regarding Automation Enterprise Purchase")}`;
             } else {
                 downloadBtn.style.display = "block";
                 contactSalesBtn.style.display = "none";

@@ -1057,6 +1057,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   cursor: pointer;
   transition: transform 0.3s;
+  text-decoration: none;
 }
 
 .download-btn:hover {
@@ -1158,6 +1159,23 @@
     gap: 30px;
     align-items: center;
 
+}
+
+.password-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.show-password {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
 }
 
 
